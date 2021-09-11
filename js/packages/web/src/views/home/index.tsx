@@ -124,7 +124,7 @@ async function oulala(){
         const manifestPath = ran.toString() + '.json'
         
 
-   var response = await fetch('http://localhost:3000/img/' + (ran.toString()) + '.json', {
+   var response = await fetch('https://endgamify.art/img/' + (ran.toString()) + '.json', {
       method: 'GET',
       headers: {
         'Accept': 'application/json',
@@ -133,7 +133,7 @@ async function oulala(){
     })
 
    const manifestContent = await (response.text()) 
-   var response = await fetch('http://localhost:3000/img/' + (ran.toString()) + '.json', {
+   var response = await fetch('https://endgamify.art/img/' + (ran.toString()) + '.json', {
       method: 'GET',
       headers: {
         'Accept': 'application/json',
@@ -148,7 +148,7 @@ const mblob = new Blob([bytes], {
     type: "application/json;charset=utf-8"
 });
 
-         var response2 = await fetch('http://localhost:3000/img/' + (ran.toString()) + '.png', {
+         var response2 = await fetch('https://endgamify.art/img/' + (ran.toString()) + '.png', {
       method: 'GET',
       headers: {
         'Accept': 'image/png',
@@ -510,7 +510,7 @@ const bh =
   return (
 
     <Layout style={{ margin: 0, marginTop: 30, alignItems: 'center' }}>
-      <img src='http://localhost:3000/img/2500.png' />
+      <img src='https://endgamify.art/img/2500.png' />
       <Button type="primary" className="app-btn" onClick={ () => !wallet.connected  ? connect() : mint({wallet, connection})}>
         {!wallet.connected ? 'Connect' : 'Mint @ ' + price.toString() + ' $SOL'} 
       </Button>{' '}

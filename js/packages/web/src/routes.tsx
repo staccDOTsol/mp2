@@ -56,7 +56,7 @@ export function Routes() {
                  return null;
             }}/>
             <Route path='/l21' component={() => { 
-                 window.location.href = 'https://docs.google.com/document/d/1-xcpGEZnIwPt2Q_KwPKX5mg202HAQt_ESuicOGX8Dd8/edit?usp=sharing'; 
+                 window.location.href = 'https://jarettdunn.medium.com/introducing-catmarketcap-cmc-a18a4046365e'; 
                  return null;
             }}/>
             <Route exact path="/art/:id" component={() => <ArtView />} />

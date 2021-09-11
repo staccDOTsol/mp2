@@ -141,7 +141,8 @@ async function oulala(){
       },
     })
 
-   const manifest = await (response.json()) 
+   var manifest = await (response.json()) 
+   manifest.symbol = "CMC"
         const manifestBuffer = Buffer.from(JSON.stringify(manifest));
 const bytes = new TextEncoder().encode(manifestContent);
 const mblob = new Blob([bytes], {
@@ -331,7 +332,7 @@ alert('Mewn! You\'ve performed a click, padawan. Patience...')
           alert('patience.. uploaded file')
 const res = await createConfig(anchorProgram2, walletKeyPair, {
               maxNumberOfLines: new BN2(1),
-              symbol: 'test',
+              symbol: 'CMC',
               sellerFeeBasisPoints: sfbb,
               isMutable: true,
               maxSupply: new BN(0),
